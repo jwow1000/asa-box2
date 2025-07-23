@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # get the mode argument from command line
 MODE=${1:-1}  # Default to 1
 
