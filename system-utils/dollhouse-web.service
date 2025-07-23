@@ -1,0 +1,13 @@
+[Unit]
+Description=AsaBox Flask Web Server
+After=network.target
+
+[Service]
+User=asa-admin
+WorkingDirectory=/home/asa-admin/asa-box2
+ExecStart=/home/asa-admin/asa-box2/venv/bin/python /home/asa-admin/asa-box2/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
