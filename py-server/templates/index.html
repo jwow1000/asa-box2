@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dollhouse Lights</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+   
+</head>
+<body>
+    <h1>~ ASA-BOX m2 Control Panel ~</h1>
+    <form action="/start" method="post">
+        <button type="submit" style="background-color: darkseagreen;">Start</button>
+    </form>
+    {% if status_msg %}
+      <p style="color: red;">{{ status_msg }}</p>
+    {% endif %}
+    <form action="/stop" method="post">
+        <button type="submit" style="background-color: red;">Stop</button>
+    </form>
+    <form action="/update" method="post">
+        <button type="submit" style="background-color: rgb(147, 218, 48);">Update</button>
+    </form>
+    <form action="/shutdown" method="post">
+        <button type="submit" style="background-color: pink;">Shutdown</button>
+    </form>
+</body>
+</html>
+

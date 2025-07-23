@@ -1,6 +1,8 @@
 # ASA-BOX2
 
-![image of the asa-box](assets/images/asabox.webp)
+<div align="center">
+  <img src="assets/images/asabox-pic.jpg" width="200"/>
+</div>
 
 ## description:
 
