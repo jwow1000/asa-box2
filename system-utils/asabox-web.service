@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 User=asa-admin
-WorkingDirectory=/home/asa-admin/asa-box2
-ExecStart=/home/asa-admin/asa-box2/venv/bin/python /home/asa-admin/asa-box2/app.py
+WorkingDirectory=/home/asa-admin/asa-box2/py-server
+ExecStart=/home/asa-admin/asa-box2/venv/bin/python /home/asa-admin/asa-box2/py-server/app.py
 Restart=always
 
 [Install]
