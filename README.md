@@ -26,5 +26,5 @@ the web server will have an update button so more PD patches can be uploaded thr
 
 ## systemctl setup:
 
-- asabox-web.service
--
+- asabox-web.service, add this to /etc/systemd/system
+- re-run daemon
