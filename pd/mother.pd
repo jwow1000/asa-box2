@@ -47,7 +47,7 @@
 #X obj 26 85 declare -path lib;
 #X text 234 5 48 53 55 60;
 #N canvas 63 88 450 300 load-sound 0;
-#X obj 20 20 main_pop 1;
+#X obj 20 20 main_waves 1;
 #X restore 37 294 pd load-sound;
 #X obj 368 13 r load-the-sound;
 #X obj 369 273 f 0.8;
@@ -64,6 +64,9 @@
 #X obj 543 106 text get \$0-mode;
 #X obj 543 82 i 0;
 #X msg 762 52 write boot-mode.txt;
+#X obj 453 420 s pd;
+#X msg 453 362 audio-dialog 0 -1 -1 -1 2 0 0 0 0 -1 -1 -1 2 0 0 0 44100 24 0 1024;
+#X obj 448 313 r loadbang-1;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;
 #X connect 3 0 6 0;
@@ -88,3 +91,5 @@
 #X connect 28 0 23 1;
 #X connect 29 0 28 0;
 #X connect 30 0 25 0;
+#X connect 32 0 31 0;
+#X connect 33 0 32 0;
