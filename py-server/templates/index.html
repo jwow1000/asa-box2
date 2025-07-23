@@ -7,10 +7,17 @@
 </head>
 <body>
     <h1>~ ASA-BOX m2 Control Panel ~</h1>
-    
     <form action="/start" method="post">
+      <label for="mode">Mode:</label>
+      <select name="mode" id="mode">
+          <option value="1">White Noise</option>
+          <option value="2">Keys</option>
+      </select>
+      <button type="submit" style="background-color: darkseagreen;">Start</button>
+  </form> 
+    <!-- <form action="/start" method="post">
         <button type="submit" style="background-color: darkseagreen;">Start</button>
-    </form>
+    </form> -->
    
     <form action="/stop" method="post">
         <button type="submit" style="background-color: red;">Stop</button>

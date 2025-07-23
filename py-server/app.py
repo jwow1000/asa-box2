@@ -11,8 +11,12 @@ def index():
 
 @app.route('/start', methods=['POST'])
 def start():
-    subprocess.Popen(['./start.sh'])
-    return redirect(url_for('index'))
+    mode = request.form.get("mode", "1")  # Default to 1 if not provided
+    try:
+      subprocess.Popen(["/home/pi/start.sh", mode])
+      return "Started with mode " + mode
+    except Exception as e:
+      return f"Error starting patch: {e}", 500
 
 @app.route('/stop', methods=['POST'])
 def stop():
