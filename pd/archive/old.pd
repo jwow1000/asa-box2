@@ -1,0 +1,6 @@
+#N canvas 263 88 450 300 12;
+#X obj 372 432 s pd;
+#X obj 372 337 loadbang;
+#X msg 372 374 audio-dialog 0 -1 -1 -1 2 0 0 0 0 -1 -1 -1 2 0 0 0 44100 24 0 1024;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
