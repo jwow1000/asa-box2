@@ -23,3 +23,8 @@ the web server will have an update button so more PD patches can be uploaded thr
 - asa.local
 - asa-admin
 - secret password for login
+
+## systemctl setup:
+
+- asabox-web.service
+-

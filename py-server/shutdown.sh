@@ -4,7 +4,7 @@
 pkill -f "pd.*main.pd"
 
 # Stop Flask service
-sudo systemctl stop dollhouse-web.service
+sudo systemctl stop asabox-web.service
 
 # Wait briefly to let processes terminate cleanly
 sleep 2

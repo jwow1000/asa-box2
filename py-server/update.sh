@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Move to the project directory
-cd /home/admin_dollhouse/dollhouse-salma || {
+cd /home/asa-admin/asa-box2 || {
   echo "Failed to change directory to /home/admin_dollhouse/dollhouse-salma"
   exit 1
 }
