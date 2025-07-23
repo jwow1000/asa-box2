@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Stop Pure Data patch
-pkill -f "pd.*mother.pd"
+ps aux | grep '[p]d.*pd/mother.pd' | awk '{print $2}' | xargs -r kill
