@@ -14,7 +14,7 @@ def start():
     mode = request.form.get("mode", "1")  # Default to 1 if not provided
     try:
       subprocess.Popen(['./start.sh', mode])
-      return "Started with mode " + mode
+      return redirect(url_for('index'))
     except Exception as e:
       return f"Error starting patch: {e}", 500
 
