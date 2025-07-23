@@ -1,7 +1,7 @@
 # ASA-BOX2
 
 <div align="center">
-  <img src="assets/images/asabox-pic.jpg" width="200"/>
+  <img src="assets/images/asabox-pic.jpg" width="400"/>
 </div>
 
 ## description:

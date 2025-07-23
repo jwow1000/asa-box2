@@ -1,0 +1,7 @@
+#N canvas 818 325 450 300 12;
+#X obj 26 8 inlet;
+#X obj 25 216 s \$1;
+#X text 78 7 pair list: target val \, ramp in ms;
+#X obj 25 152 line 0.1 1;
+#X connect 0 0 3 0;
+#X connect 3 0 1 0;

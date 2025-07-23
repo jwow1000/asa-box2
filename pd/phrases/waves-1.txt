@@ -1,0 +1,2 @@
+w 4, hipGain 0.3 10000;
+w 4, hipGain 0 10000;

@@ -1,0 +1,3 @@
+w 0, defaut;
+w 4, hipGain 0 2000;
+w 4, cricketVol 0.5 8000;

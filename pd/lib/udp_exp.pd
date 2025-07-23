@@ -1,0 +1,17 @@
+#N canvas 598 296 737 449 12;
+#X obj 67 244 netsend;
+#X obj 179 176 oscformat;
+#X msg 179 127 60 100;
+#X msg 243 142 list /print/pd hello 2 2 2.3;
+#X obj 309 68 oscparse;
+#X obj 309 92 print;
+#X obj 61 39 loadbang;
+#X obj 309 44 netreceive 9998;
+#X msg 81 86 connect localhost 9999;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 0;
+#X connect 4 0 5 0;
+#X connect 6 0 8 0;
+#X connect 7 0 4 0;
+#X connect 8 0 0 0;
