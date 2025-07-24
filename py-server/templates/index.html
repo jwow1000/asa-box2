@@ -22,9 +22,9 @@
         const slider = document.getElementById('slider');
         const volumeValue = document.getElementById('volumeValue');
 
-        // Throttle function: only allow sending once every 100ms
+        // Throttle function: only allow sending once every 200ms
         let lastSent = 0;
-        const throttleDelay = 100; // milliseconds
+        const throttleDelay = 200; // milliseconds
 
         slider.addEventListener('input', () => {
           const now = Date.now();
