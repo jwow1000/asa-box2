@@ -14,7 +14,21 @@
           <option value="2">Keys</option>
       </select>
       <button type="submit" style="background-color: darkseagreen;">Start</button>
-  </form> 
+    </form>
+    <div id="volumeWrapper">
+      <h2>Volume</h2>
+      <input type="range" id="slider" min="0" max="127" value="64" />
+      <script>
+        const slider = document.getElementById('slider');
+        slider.addEventListener('input', () => {
+          fetch('/vol', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `value=${slider.value}`
+          });
+        });
+      </script>
+    </div>
     <!-- <form action="/start" method="post">
         <button type="submit" style="background-color: darkseagreen;">Start</button>
     </form> -->

@@ -1,13 +1,27 @@
 from flask import Flask, render_template, request, redirect, url_for
 import subprocess
+import socket
 
-bulb_status_msg = ""
 
 app = Flask(__name__)
 
+UDP_IP = "127.0.0.1"  # local since pd is on same Pi
+UDP_PORT = 8000       # match the one in Pure Data
+
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
 @app.route('/')
 def index():
-    return render_template('index.html', status_msg=bulb_status_msg)
+    return render_template('index.html')
+
+@app.route('/vol', methods=['POST'])
+def send():
+    value = request.form.get('value')
+    if value is not None:
+        message = f"vol {value}\n"
+        print(message)
+        sock.sendto(message.encode(), (UDP_IP, UDP_PORT))
+    return '', 204
 
 @app.route('/start', methods=['POST'])
 def start():
