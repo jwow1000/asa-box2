@@ -14,8 +14,8 @@
 #X obj 37 270 hip~ 5;
 #X obj 43 345 make-stereo 10;
 #X obj 263 126 r global-vol;
-#X obj 28 217 clone -s 1 synth-voice~ 6 \$1;
-#X obj 42 145 poly 6 1, f 10;
+#X obj 28 217 clone -s 1 synth-voice~ 4 \$1;
+#X obj 42 145 poly 4 1, f 10;
 #X connect 0 0 14 0;
 #X connect 2 0 13 0;
 #X connect 3 0 11 0;
