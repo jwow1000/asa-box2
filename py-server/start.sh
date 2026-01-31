@@ -10,4 +10,4 @@ cd /home/asa-admin/asa-box2 || exit 1
 echo "$MODE" > pd/boot-mode.txt
 
 # Start the Pure Data patch
-pd -nogui -noadc -alsa -audiooutdev 2 pd/mother.pd &
+pd -nogui -noadc -alsa -audiooutdev 2 -rt -r 44100 -blocksize 1024 pd/mother.pd &
