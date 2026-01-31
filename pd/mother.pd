@@ -10,8 +10,12 @@
 #X obj 46 42 netreceive -u 8000;
 #X obj 46 66 route vol;
 #X obj 48 98 s flask-vol;
+#X obj 128 185 print incoming-vol;
+#X obj 180 112 print raw-netReceive;
 #X connect 0 0 1 0;
+#X connect 0 0 4 0;
 #X connect 1 0 2 0;
+#X connect 1 0 3 0;
 #X restore 29 21 pd connect;
 #X obj 36 388 *~;
 #X obj 126 389 *~;
