@@ -1,0 +1,5 @@
+filtQ 0 \; hipGain 0.63354 \; lopGain 0.111801 \; lopCut 0.47205 \; lfoRate 0.503106 \; cricketVol 0.981366 \; lfoRoot 0.540373 \; lfoDepth 0.130435 \;;
+filtQ 0 \; hipGain 0.440994 \; lopGain 0.565217 \; lopCut 1 \; lfoRate 0.136646 \; cricketVol 0 \; lfoRoot 0.645963 \; lfoDepth 0.0869565 \;;
+filtQ 0.0124224 \; hipGain 0.981366 \; lopGain 0.0621118 \; lopCut 1 \; lfoRate 0.136646 \; cricketVol 1 \; lfoRoot 0.10559 \; lfoDepth 0.204969 \;;
+filtQ 0.0124224 \; hipGain 0 \; lopGain 1 \; lopCut 1 \; lfoRate 0.136646 \; cricketVol 1 \; lfoRoot 0.10559 \; lfoDepth 0.204969 \;;
+filtQ 0 \; hipGain 0.559006 \; lopGain 0.31677 \; lopCut 0.0869565 \; lfoRate 0 \; cricketVol 0.795031 \; lfoRoot 0.36646 \; lfoDepth 0.47205 \;;
