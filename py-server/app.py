@@ -18,7 +18,7 @@ def index():
 def send():
     value = request.form.get('value')
     if value is not None:
-        message = f"vol {value}\n"
+        message = f"vol {value};\n"
         print(message)
         sock.sendto(message.encode(), (UDP_IP, UDP_PORT))
     return '', 204
